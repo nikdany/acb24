@@ -1,4 +1,4 @@
-package week1.day3;
+package week2;
 
 import java.util.Scanner;
 
@@ -11,7 +11,9 @@ public class _02Arrays {
         System.out.println("Please input array size");
 
         int size = scanner.nextInt();
-
+/*      <type>[] <name> = new <type>[<size>];
+        <type>[] <name> = {el1, el2, ... ,eln};
+* */
         int[] numbers = new int[size];
 
         for(int i = 0; i < numbers.length; i++){

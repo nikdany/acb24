@@ -1,4 +1,4 @@
-package week1.day3;
+package week2;
 
 /**
  * Created by 4iamn on 20.05.2017.
