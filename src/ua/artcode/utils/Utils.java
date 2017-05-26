@@ -6,15 +6,15 @@ package ua.artcode.utils;
 
 public class Utils {
     public static void printArray(int[] numbers) {
-        System.out.println("[");
+        System.out.print("[");
         for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i]);
             if (i < numbers.length - 1) ;
             {
                 System.out.print(",");
             }
-            System.out.println(" ]");
         }
+        System.out.println(" ]");
 
     }
     public static void printArray(String[] numbers) {
