@@ -1,5 +1,7 @@
 package week2.hometask2;
 
+import ua.artcode.utils.Utils;
+
 import java.util.Scanner;
 
 /**
@@ -13,9 +15,19 @@ public class _02HomeTask_2 {
         System.out.println("Input number");
         int number = input.nextInt();
 
-        int digit1 = number % 10;
-        int digit2 = (number - digit1) / 10;
-        int result = digit1 * digit2;
+        /*int digit;
+        int result = 1;
+
+        int length = Utils.intLength(number);
+        int pow = length -1;
+        for (int i = 0; i < length; i++){
+            digit = Math.abs(number) / (int)Math.pow(10, (pow -i));
+            if (digit > 10){
+                digit = digit % 10;
+            }
+            result *= digit;
+        }*/
+        int result = Utils.intDigitMult(number);
         System.out.println("Multiply of digits will be " + result + "!");
     }
 }
