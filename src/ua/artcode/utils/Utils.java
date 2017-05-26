@@ -11,7 +11,7 @@ public class Utils {
             System.out.print(numbers[i]);
             if (i < numbers.length - 1) ;
             {
-                System.out.print(",");
+                System.out.print(", ");
             }
         }
         System.out.println(" ]");
@@ -22,12 +22,26 @@ public class Utils {
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i]);
             if (i < numbers.length - 1) {
-                System.out.print(",");
+                System.out.print(", ");
             }
         }
         System.out.println("]");
 
     }
+
+    public static void printArray(double[] numbers) {
+        System.out.print("[");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i]);
+            if (i < numbers.length - 1) ;
+            {
+                System.out.print(", ");
+            }
+        }
+        System.out.println(" ]");
+
+    }
+
     public static boolean checkLetter(char letter){
         if(letter == 'a'||
                 letter == 'e'||
@@ -114,6 +128,15 @@ public class Utils {
         }
         return result;
 
+    }
+
+    public static String stringWordsRevert (String text){
+        String buffer[] = text.split(" ");
+        String revert = "";
+        for (int i = buffer.length - 1; i >= 0; i--){
+            revert = revert.concat(buffer[i] + " ");
+        }
+        return revert;
     }
 }
 

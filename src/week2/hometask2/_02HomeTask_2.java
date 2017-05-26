@@ -27,7 +27,6 @@ public class _02HomeTask_2 {
             }
             result *= digit;
         }*/
-        int result = Utils.intDigitMult(number);
-        System.out.println("Multiply of digits will be " + result + "!");
+        System.out.println("Multiply of digits will be " + Utils.intDigitMult(number) + "!");
     }
 }
